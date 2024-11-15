@@ -1,11 +1,11 @@
-package pkg
+package orchestrator
 
 import (
 	"fmt"
 	"sync"
 
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
-	"github.com/joaogabriel01/storage-orchestrator/pkg/strategies"
+	"github.com/joaogabriel01/storage-orchestrator/protocols"
+	"github.com/joaogabriel01/storage-orchestrator/strategies"
 )
 
 type Orchestrator[K any, V any] struct {

@@ -1,11 +1,11 @@
-package pkg
+package orchestrator
 
 import (
 	"testing"
 
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
-	strategies_mock "github.com/joaogabriel01/storage-orchestrator/pkg/strategies/test"
-	unit_test "github.com/joaogabriel01/storage-orchestrator/pkg/test"
+	"github.com/joaogabriel01/storage-orchestrator/protocols"
+	strategies_mock "github.com/joaogabriel01/storage-orchestrator/strategies/test"
+	unit_test "github.com/joaogabriel01/storage-orchestrator/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

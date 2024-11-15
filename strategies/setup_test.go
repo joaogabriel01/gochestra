@@ -1,8 +1,8 @@
 package strategies
 
 import (
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
-	unit_test "github.com/joaogabriel01/storage-orchestrator/pkg/test"
+	"github.com/joaogabriel01/storage-orchestrator/protocols"
+	unit_test "github.com/joaogabriel01/storage-orchestrator/test"
 )
 
 var units map[string]protocols.StorageUnit[string, string]

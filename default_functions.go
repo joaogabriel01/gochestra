@@ -1,9 +1,9 @@
-package pkg
+package orchestrator
 
 import (
 	"context"
 
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
+	"github.com/joaogabriel01/storage-orchestrator/protocols"
 )
 
 func (o *Orchestrator[K, V]) defaultSaveOptions() protocols.SaveOptions {
