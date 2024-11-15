@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
+	"github.com/joaogabriel01/gochestra/protocols"
 )
 
 type SequentialSaveStrategy[K any, V any] struct{}

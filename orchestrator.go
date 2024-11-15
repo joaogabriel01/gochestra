@@ -1,11 +1,11 @@
-package pkg
+package gochestra
 
 import (
 	"fmt"
 	"sync"
 
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
-	"github.com/joaogabriel01/storage-orchestrator/pkg/strategies"
+	"github.com/joaogabriel01/gochestra/protocols"
+	"github.com/joaogabriel01/gochestra/strategies"
 )
 
 type Orchestrator[K any, V any] struct {

@@ -41,7 +41,16 @@ func NewPostgresStorageUnit() *PostgresStorageUnit {
 	return &PostgresStorageUnit{db: db}
 }
 
+func (p *PostgresStorageUnit) Setup() error {
+	_, err := p.db.Exec(`CREATE TABLE IF NOT EXISTS users (
+		id VARCHAR(255) PRIMARY KEY,
+		details TEXT
+	)`)
+	return err
+}
+
 func (p *PostgresStorageUnit) Save(ctx context.Context, _, userJson string) error {
+	p.Setup()
 	var user User
 	err := json.Unmarshal([]byte(userJson), &user)
 	if err != nil {

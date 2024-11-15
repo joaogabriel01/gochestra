@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/joaogabriel01/storage-orchestrator/pkg"
-	"github.com/joaogabriel01/storage-orchestrator/pkg/protocols"
+	"github.com/joaogabriel01/gochestra"
+	"github.com/joaogabriel01/gochestra/protocols"
 )
 
 type User struct {
@@ -15,7 +15,7 @@ type User struct {
 func main() {
 	var err error
 	units := map[string]protocols.StorageUnit[string, string]{}
-	orchestrator := pkg.NewOrchestrator[string, string](units, []string{})
+	orchestrator := gochestra.NewOrchestrator[string, string](units, []string{})
 
 	redisUnit := NewRedisStorageUnit()
 	pgUnit := NewPostgresStorageUnit()
@@ -47,11 +47,19 @@ func main() {
 		panic(err)
 	}
 	// user = `{"id": "1", "details": "details"}`
+	fmt.Println("after save: ", user)
+	fmt.Println("saved: ", saved)
 
 	err = orchestrator.Delete("1")
 	if err != nil {
 		panic(err)
 	}
 
-	fmt.Println(saved, user)
+	user, err = orchestrator.Get("1")
+	if err != nil {
+		panic(err)
+	}
+	// user = ""
+	fmt.Println("after delete: ", user)
+
 }

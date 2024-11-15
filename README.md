@@ -1,8 +1,8 @@
-# storage-orchestrator
+# gochestra
 
 ## Package Overview
 
-The `pkg` package provides an approach to storage orchestration, enabling complex operations for saving, retrieving, and deleting data across multiple storage units with customizable strategies and concurrency control.
+The package provides an approach to storage orchestration, enabling operations for saving, retrieving, and deleting data across multiple storage units with customizable strategies and concurrency control.
 
 ## Types
 

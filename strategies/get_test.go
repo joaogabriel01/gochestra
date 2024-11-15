@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	strategies_mock "github.com/joaogabriel01/storage-orchestrator/pkg/strategies/test"
+	strategies_mock "github.com/joaogabriel01/gochestra/strategies/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
