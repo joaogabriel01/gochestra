@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/joaogabriel01/storage-orchestrator/protocols"
+	"github.com/joaogabriel01/gochestra/protocols"
 )
 
 type SequentialDeleteStrategy[K any, V any] struct{}

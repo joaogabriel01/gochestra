@@ -1,9 +1,9 @@
-package orchestrator
+package gochestra
 
 import (
 	"context"
 
-	"github.com/joaogabriel01/storage-orchestrator/protocols"
+	"github.com/joaogabriel01/gochestra/protocols"
 )
 
 func (o *Orchestrator[K, V]) defaultSaveOptions() protocols.SaveOptions {

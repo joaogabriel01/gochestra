@@ -3,7 +3,7 @@ package unit_test
 import (
 	"context"
 
-	"github.com/joaogabriel01/storage-orchestrator/protocols"
+	"github.com/joaogabriel01/gochestra/protocols"
 	"github.com/stretchr/testify/mock"
 )
 

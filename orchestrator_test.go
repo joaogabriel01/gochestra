@@ -1,11 +1,11 @@
-package orchestrator
+package gochestra
 
 import (
 	"testing"
 
-	"github.com/joaogabriel01/storage-orchestrator/protocols"
-	strategies_mock "github.com/joaogabriel01/storage-orchestrator/strategies/test"
-	unit_test "github.com/joaogabriel01/storage-orchestrator/test"
+	"github.com/joaogabriel01/gochestra/protocols"
+	strategies_mock "github.com/joaogabriel01/gochestra/strategies/test"
+	unit_test "github.com/joaogabriel01/gochestra/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

@@ -1,4 +1,4 @@
-module github.com/joaogabriel01/storage-orchestrator
+module github.com/joaogabriel01/gochestra
 
 go 1.21.6
 
